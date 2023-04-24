@@ -7,9 +7,12 @@ let tasks = [];
 function renderTasks() {
   taskList.innerHTML = '';
   for (let i = 0; i < tasks.length; i++) {
-    const task = tasks[i];
+    // const task = tasks[i]; - replace a variable with an HTML node for styling purposes
+    const task = document.createElement('a');
+    task.textContent = tasks[i];
     const li = document.createElement('li');
-    li.textContent = task;
+    // 
+
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = false;
@@ -18,9 +21,19 @@ function renderTasks() {
       renderTasks();
     });*/
     li.appendChild(checkbox);
+    li.appendChild(task);
+    
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', () => {
+      console.log('Delete this motherfucker!');
+      tasks.splice(i, 1);
+      renderTasks();
+    });
+    li.appendChild(deleteButton);
+
     taskList.appendChild(li);
-    // const deleteButton =
-    }
+  }
 };
 
 function newRenderTasks() {
