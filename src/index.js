@@ -43,7 +43,7 @@ function newRenderTasks() {
 function addTask(event) {
   event.preventDefault();
   tasks.push(taskInput.value);
-  taskInput.innerHTML = '';
+  taskInput.value = '';
   renderTasks();
 }
 
