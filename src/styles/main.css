@@ -1,11 +1,52 @@
 html {
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
-    align-self: center;
+    background-color: #6b5b95;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin: 5px;
 }
 
-ul {
+.taskMaster {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskForm {
+    background-color: #d64161;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    height: 20px;
+    flex-grow: 1;
+}
+
+.taskList {
+    background-color: #feb236;
     list-style: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    flex-grow: 3;
+}
+
+.task {
+    background-color: #ff7b25;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.deleteButton {
+   background-color: #fff;
+   color: #ff7b25;
+   border: 0px;
+   border-radius: 5px;
+   float: right;
 }

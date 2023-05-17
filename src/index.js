@@ -11,6 +11,7 @@ function renderTasks() {
     const task = document.createElement('a');
     task.textContent = tasks[i];
     const li = document.createElement('li');
+    li.className = 'task';
     // 
 
     const checkbox = document.createElement('input');
@@ -25,6 +26,7 @@ function renderTasks() {
     
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
+    deleteButton.className = 'deleteButton';
     deleteButton.addEventListener('click', () => {
       console.log('Delete this motherfucker!');
       tasks.splice(i, 1);
