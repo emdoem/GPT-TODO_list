@@ -28,7 +28,6 @@ function renderTasks() {
     deleteButton.textContent = 'Delete';
     deleteButton.className = 'deleteButton';
     deleteButton.addEventListener('click', () => {
-      console.log('Delete this motherfucker!');
       tasks.splice(i, 1);
       renderTasks();
     });
