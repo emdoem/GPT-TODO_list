@@ -1,19 +1,19 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "title": "Get Shorty",
-            "checked": false
-        },
-        {
-            "id": 2,
-            "title": "Get Forty",
-            "checked": true
-        },
-        {
-            "id": 3,
-            "title": "Get Smart",
-            "checked": false
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Get Shorty",
+      "checked": false
+    },
+    {
+      "title": "Checking this task!",
+      "checked": false,
+      "id": 4
+    },
+    {
+      "title": "Another task to check",
+      "checked": false,
+      "id": 5
+    }
+  ]
 }
